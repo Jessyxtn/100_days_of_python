@@ -18,7 +18,7 @@ password = ""
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 
 for letter in range(0, nr_letters):
-    seed = random.randint(0, letters_len - 1)
+    seed = random.choice(letters)
     password += letters[seed]
 
 for symbol in range(0, nr_symbols):
